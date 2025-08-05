@@ -2,18 +2,18 @@
 \documentclass[12pt,t]{beamer}
 \usepackage{graphicx}
 
-\usepackage{tikz}
-\usetikzlibrary{mindmap,overlay-beamer-styles}
-\usetikzlibrary{shapes.arrows,calc,positioning}%%For arrows
-\usepackage{tikzit}
+% \usepackage{tikz}
+% \usetikzlibrary{mindmap,overlay-beamer-styles}
+% \usetikzlibrary{shapes.arrows,calc,positioning}%%For arrows
+% \usepackage{tikzit}
 
-\usetikzlibrary{decorations.pathmorphing, backgrounds, shapes, positioning}
-\input{tikz.tikzstyles} % Load styles from the external file
-\input{tikz.tikzdefs} % Load styles from the external file
+% \usetikzlibrary{decorations.pathmorphing, backgrounds, shapes, positioning}
+% \input{tikz.tikzstyles} % Load styles from the external file
+% \input{tikz.tikzdefs} % Load styles from the external file
 
 
-\setbeameroption{hide notes}
-\setbeamertemplate{note page}[plain]
+% \setbeameroption{hide notes}
+% \setbeamertemplate{note page}[plain]
 
 % get rid of junk
 \usetheme{default}
@@ -88,26 +88,45 @@
    } }
 
 \begin{frame}{Why Version Control?}
+	\pause
+	This for instance is version control
+		%
+		\begin{figure}[ht]
+		    \centering
+		    \includegraphics[width=0.6\textwidth]{figs/ScreenShot-without-git.png}
+		\end{figure}
+		%
+		\pause
+
+	But, we can do better
 \begin{itemize}
+		\pause
     \item Track changes in your work over time
 		\pause
     \item Collaborate effectively with co-authors
 		\pause
-    \item Avoid email chains like \texttt{paper-v3-final-final2.tex}
-		\pause
-    \item Revert mistakes and explore new ideas without fear
+    \item Revert mistakes and explore new ideas without ruining the file structure
 \end{itemize}
 \end{frame}
 
 \begin{frame}{What is Git?}
 \begin{itemize}
     \item A distributed version control system
+		\vspace{1em}
 		\pause
     \item Records snapshots of your project
+		\vspace{1em}
 		\pause
     \item Lets you experiment safely
+		\vspace{1em}
 		\pause
     \item Works especially well with plain text formats like \LaTeX
+		\pause 
+		\vspace{.5em}
+		\begin{itemize}
+			\item To save all your photos, better use something else.
+		\end{itemize}
+		
 \end{itemize}
 \end{frame}
 
